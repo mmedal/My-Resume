@@ -1,0 +1,78 @@
+%-----------------------------------------
+% Matthew Medal
+% Resumé
+%
+% URL: http://github.com/mmedal/My-Resume
+
+% Adapted from Michael Wright (mdwrigh2@ncsu.edu)
+% This document is covered under the Creative Commons Attribution 3.0 Unported License
+%-----------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper,final]{moderncv}
+\usepackage{fontspec}
+\moderncvtheme[darkred]{classic}
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
+\AtBeginDocument{\recomputelengths}
+% FONTS
+\usepackage[utf8]{inputenc}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+% Remove % to set to different fonts
+%\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+%\setmonofont[Scale=0.8]{Monaco} 
+
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% ---- MARGIN YEARS
+%\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+
+
+% Personal Inofrmation
+\firstname{Matthew}
+\familyname{Medal}
+\address{5296 Centerhart Ct.}{San Jose, CA 95123}
+\mobile{(408) 460-2148}
+\email{mmedal@scu.edu}
+
+\title{Matthew Medal's Resume}
+
+\nopagenumbers{}
+
+\begin{document}
+
+\maketitle
+\section{Education}
+\cventry{2010-2014 (expected)}{Computer Science \& Mathematics, Santa Clara University}{Santa Clara, CA}{}{Total GPA: 3.5}{CSC \& MA Majors GPA: N/A}
+\section{Computer Skills} 
+  \cvline{Languages:}{C, C++}
+  \cvline{Software:}{QT Creator, Xcode, MacVim, Ableton Live}
+  \cvline{Operating Systems:}{OS X, Windows, Linux (Primarily Ubuntu)}
+  \cvline{General Familiarity:}{Active Directory, .bat Scripting, PHP, iOS Development, UNIX Terminal}
+\section{Experience} 
+  \cventry{2010--Current}{IT Technician}{Bellarmine College Prep}{San Jose, CA}{}{
+    \begin{itemize}
+      \item Maintain and provide hardware support for computer network on a campus of 1600.
+      \item Work one-on-one with faculty/staff on technology related issues.
+      \item Assist IT Director with tasks as-needed, ranging from racking servers to rewiring network switches to creating an OSX re-imaging solution.
+    \end{itemize}
+  }
+  \cventry{May 2007 --\\August 2009}{Tennis Instructor}{SJ Swim & Racquet Club}{San Jose, CA}{}{
+    \begin{itemize}% \itemsep -2pt % reduce space between items
+      \item Managed and ran tennis camps for groups of 15 students aged 10-14.
+      \item Provided one-on-one instruction for adults aged 30-50.
+    \end{itemize}
+\section{Extra}
+  \cvlistitem{Recently won 2nd at a local VC Business competition at SCU by representing Dwolla}
+  \cvlistitem{Extremely proficient in audio editing and sound mixing in Ableton - see \url{https://soundcloud.com/median}}
+\end{document}
